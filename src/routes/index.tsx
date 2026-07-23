@@ -30,7 +30,8 @@ import {
   Calculator,
   PlayCircle,
 } from "lucide-react";
-import heroImg from "@/assets/hero-entrepreneur.jpg";
+import heroAsset from "@/assets/hero-entrepreneur.png.asset.json";
+const heroImg = heroAsset.url;
 import logoAsset from "@/assets/foresight-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
