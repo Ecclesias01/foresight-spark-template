@@ -31,6 +31,7 @@ import {
   PlayCircle,
 } from "lucide-react";
 import heroImg from "@/assets/hero-entrepreneur.jpg";
+import logoAsset from "@/assets/foresight-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
