@@ -45,7 +45,7 @@
 :root {
   --radius: 0.875rem;
 
-  /* Foresight brand palette — bank red, blue and white */
+  /* Foresight brand palette — dark navy blue, muted red and white */
   --background: oklch(1 0 0);
   --foreground: oklch(0.18 0.04 260);
   --card: oklch(1 0 0);
@@ -53,18 +53,18 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.18 0.04 260);
 
-  --primary: oklch(0.55 0.18 255);
+  --primary: oklch(0.28 0.07 255);
   --primary-foreground: oklch(0.99 0.005 255);
-  --primary-light: oklch(0.65 0.16 255);
-  --primary-dark: oklch(0.40 0.15 255);
+  --primary-light: oklch(0.38 0.08 255);
+  --primary-dark: oklch(0.20 0.06 255);
 
   --secondary: oklch(0.96 0.01 255);
   --secondary-foreground: oklch(0.30 0.07 255);
 
-  --gold: oklch(0.55 0.22 25);
+  --gold: oklch(0.45 0.10 25);
   --gold-foreground: oklch(0.99 0.005 25);
 
-  --accent: oklch(0.55 0.22 25);
+  --accent: oklch(0.45 0.10 25);
   --accent-foreground: oklch(0.99 0.005 25);
 
   --muted: oklch(0.97 0.005 250);
@@ -75,15 +75,15 @@
 
   --border: oklch(0.92 0.008 250);
   --input: oklch(0.92 0.008 250);
-  --ring: oklch(0.55 0.18 255);
+  --ring: oklch(0.28 0.07 255);
 
-  --ink: oklch(0.15 0.05 260);
+  --ink: oklch(0.16 0.05 255);
 
   --gradient-primary: linear-gradient(135deg, var(--primary-dark), var(--primary) 55%, var(--primary-light));
-  --gradient-gold: linear-gradient(135deg, var(--gold), oklch(0.65 0.20 25));
-  --shadow-elegant: 0 20px 40px -12px color-mix(in oklab, var(--primary) 30%, transparent);
+  --gradient-gold: linear-gradient(135deg, var(--gold), oklch(0.55 0.12 25));
+  --shadow-elegant: 0 20px 40px -12px color-mix(in oklab, var(--primary) 35%, transparent);
   --shadow-soft: 0 10px 30px -12px oklch(0.2 0.03 260 / 0.15);
-  --shadow-gold: 0 12px 30px -10px color-mix(in oklab, var(--gold) 45%, transparent);
+  --shadow-gold: 0 12px 30px -10px color-mix(in oklab, var(--gold) 35%, transparent);
 }
 
 .dark {
@@ -91,9 +91,9 @@
   --foreground: oklch(0.98 0.005 250);
   --card: oklch(0.18 0.05 260);
   --card-foreground: oklch(0.98 0.005 250);
-  --primary: oklch(0.62 0.16 255);
-  --primary-foreground: oklch(0.10 0.02 260);
-  --gold: oklch(0.60 0.20 25);
+  --primary: oklch(0.35 0.08 255);
+  --primary-foreground: oklch(0.99 0.005 250);
+  --gold: oklch(0.50 0.11 25);
   --gold-foreground: oklch(0.99 0.005 25);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
