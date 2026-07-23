@@ -45,39 +45,39 @@
 :root {
   --radius: 0.875rem;
 
-  /* Foresight brand palette — dark navy blue, muted red and white */
+  /* Foresight brand palette — light sky blue, radiant red and white */
   --background: oklch(1 0 0);
-  --foreground: oklch(0.18 0.04 260);
+  --foreground: oklch(0.22 0.05 255);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.04 260);
+  --card-foreground: oklch(0.22 0.05 255);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.04 260);
+  --popover-foreground: oklch(0.22 0.05 255);
 
-  --primary: oklch(0.28 0.07 255);
+  --primary: oklch(0.62 0.14 240);
   --primary-foreground: oklch(0.99 0.005 255);
-  --primary-light: oklch(0.38 0.08 255);
-  --primary-dark: oklch(0.20 0.06 255);
+  --primary-light: oklch(0.75 0.11 235);
+  --primary-dark: oklch(0.48 0.13 245);
 
-  --secondary: oklch(0.96 0.01 255);
-  --secondary-foreground: oklch(0.30 0.07 255);
+  --secondary: oklch(0.96 0.02 235);
+  --secondary-foreground: oklch(0.35 0.10 245);
 
-  --gold: oklch(0.45 0.10 25);
-  --gold-foreground: oklch(0.99 0.005 25);
+  --gold: oklch(0.62 0.22 25);
+  --gold-foreground: oklch(0.99 0.01 25);
 
-  --accent: oklch(0.45 0.10 25);
-  --accent-foreground: oklch(0.99 0.005 25);
+  --accent: oklch(0.62 0.22 25);
+  --accent-foreground: oklch(0.99 0.01 25);
 
-  --muted: oklch(0.97 0.005 250);
-  --muted-foreground: oklch(0.50 0.02 260);
+  --muted: oklch(0.97 0.008 235);
+  --muted-foreground: oklch(0.50 0.03 250);
 
-  --destructive: oklch(0.577 0.245 27.325);
+  --destructive: oklch(0.62 0.24 27);
   --destructive-foreground: oklch(0.984 0.003 247.858);
 
-  --border: oklch(0.92 0.008 250);
-  --input: oklch(0.92 0.008 250);
-  --ring: oklch(0.28 0.07 255);
+  --border: oklch(0.92 0.012 235);
+  --input: oklch(0.92 0.012 235);
+  --ring: oklch(0.62 0.14 240);
 
-  --ink: oklch(0.16 0.05 255);
+  --ink: oklch(0.28 0.08 250);
 
   --gradient-primary: linear-gradient(135deg, var(--primary-dark), var(--primary) 55%, var(--primary-light));
   --gradient-gold: linear-gradient(135deg, var(--gold), oklch(0.55 0.12 25));
