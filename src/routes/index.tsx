@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import {
-  Landmark,
+  
   HandCoins,
   PiggyBank,
   Users,
@@ -31,6 +31,7 @@ import {
   PlayCircle,
 } from "lucide-react";
 import heroImg from "@/assets/hero-entrepreneur.jpg";
+import logoAsset from "@/assets/foresight-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -136,13 +137,13 @@ function Home() {
       <nav className={`sticky top-0 z-40 bg-background/90 backdrop-blur transition-shadow ${scrolled ? "shadow-soft" : ""}`}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#home" className="flex items-center gap-3">
-            <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-primary text-primary-foreground shadow-elegant">
-              <Landmark className="h-5 w-5" />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-display text-xl font-bold text-primary">Foresight</span>
-              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Microfinance Bank</span>
-            </div>
+            <img
+              src={logoAsset.url}
+              alt="Foresight Microfinance Bank Ltd."
+              width={220}
+              height={56}
+              className="h-12 w-auto object-contain"
+            />
           </a>
 
           <ul className="hidden lg:flex items-center gap-8 text-sm font-medium">
@@ -469,13 +470,13 @@ function Home() {
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-3">
-                <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-primary">
-                  <Landmark className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="font-display text-xl font-bold">Foresight</div>
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary-foreground/60">Microfinance Bank</div>
-                </div>
+                <img
+                  src={logoAsset.url}
+                  alt="Foresight Microfinance Bank Ltd."
+                  width={220}
+                  height={56}
+                  className="h-12 w-auto object-contain brightness-0 invert"
+                />
               </div>
               <p className="mt-5 max-w-md text-sm text-primary-foreground/70">
                 Empowering individuals and small businesses through accessible, human financial services. Everyone deserves the tools to build a better tomorrow.
