@@ -470,13 +470,13 @@ function Home() {
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-3">
-                <div className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-primary">
-                  <Landmark className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="font-display text-xl font-bold">Foresight</div>
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary-foreground/60">Microfinance Bank</div>
-                </div>
+                <img
+                  src={logoAsset.url}
+                  alt="Foresight Microfinance Bank Ltd."
+                  width={220}
+                  height={56}
+                  className="h-12 w-auto object-contain brightness-0 invert"
+                />
               </div>
               <p className="mt-5 max-w-md text-sm text-primary-foreground/70">
                 Empowering individuals and small businesses through accessible, human financial services. Everyone deserves the tools to build a better tomorrow.
