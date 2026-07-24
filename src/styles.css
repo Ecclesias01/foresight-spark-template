@@ -45,7 +45,7 @@
 :root {
   --radius: 0.875rem;
 
-  /* Foresight brand palette — light sky blue, radiant red and white */
+  /* Foresight brand palette — light sky blue, muted burgundy and white */
   --background: oklch(1 0 0);
   --foreground: oklch(0.22 0.05 255);
   --card: oklch(1 0 0);
@@ -61,16 +61,16 @@
   --secondary: oklch(0.96 0.02 235);
   --secondary-foreground: oklch(0.35 0.10 245);
 
-  --gold: oklch(0.62 0.22 25);
+  --gold: #7A1F1F;
   --gold-foreground: oklch(0.99 0.01 25);
 
-  --accent: oklch(0.62 0.22 25);
+  --accent: #7A1F1F;
   --accent-foreground: oklch(0.99 0.01 25);
 
   --muted: oklch(0.97 0.008 235);
   --muted-foreground: oklch(0.50 0.03 250);
 
-  --destructive: oklch(0.62 0.24 27);
+  --destructive: #7A1F1F;
   --destructive-foreground: oklch(0.984 0.003 247.858);
 
   --border: oklch(0.92 0.012 235);
@@ -80,7 +80,7 @@
   --ink: oklch(0.28 0.08 250);
 
   --gradient-primary: linear-gradient(135deg, var(--primary-dark), var(--primary) 55%, var(--primary-light));
-  --gradient-gold: linear-gradient(135deg, var(--gold), oklch(0.55 0.12 25));
+  --gradient-gold: linear-gradient(135deg, var(--gold), #9B3A3A);
   --shadow-elegant: 0 20px 40px -12px color-mix(in oklab, var(--primary) 35%, transparent);
   --shadow-soft: 0 10px 30px -12px oklch(0.2 0.03 260 / 0.15);
   --shadow-gold: 0 12px 30px -10px color-mix(in oklab, var(--gold) 35%, transparent);
@@ -93,7 +93,7 @@
   --card-foreground: oklch(0.98 0.005 250);
   --primary: oklch(0.35 0.08 255);
   --primary-foreground: oklch(0.99 0.005 250);
-  --gold: oklch(0.50 0.11 25);
+  --gold: #8B2E2E;
   --gold-foreground: oklch(0.99 0.005 25);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
