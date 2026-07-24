@@ -121,7 +121,7 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Top bar */}
       <div className="bg-primary-dark text-primary-foreground/90 text-sm">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-1 px-6 py-2 sm:flex-row">
+        <div className="mx-auto flex max-w-screen-2xl flex-col items-center justify-between gap-1 px-6 py-2 sm:flex-row">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
             <span className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-gold" /> +1 (555) 123-4567</span>
             <span className="hidden sm:inline text-primary-foreground/40">|</span>
@@ -136,7 +136,7 @@ function Home() {
 
       {/* Nav */}
       <nav className={`sticky top-0 z-40 bg-background/90 backdrop-blur transition-shadow ${scrolled ? "shadow-soft" : ""}`}>
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-6 py-4">
           <a href="#home" className="flex items-center gap-3">
             <img
               src={logoAsset.url}
@@ -166,7 +166,7 @@ function Home() {
           </ul>
 
           <div className="hidden lg:flex items-center gap-3">
-            <a href="#contact" className="rounded-lg border border-primary px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground">
+            <a href="#contact" className="rounded-lg border-2 border-primary px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground">
               Open Account
             </a>
             <a href="#calculator" className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5">
@@ -209,9 +209,9 @@ function Home() {
               "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E\")",
           }}
         />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-28">
+        <div className="relative mx-auto grid max-w-screen-2xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-28">
           <div className="text-primary-foreground">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-gold backdrop-blur">
+            <span className="inline-flex items-center gap-2 rounded-full border-2 border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-gold backdrop-blur">
               <Sparkles className="h-3.5 w-3.5" /> Vision-backed finance
             </span>
             <h1 className="mt-6 text-3xl leading-[1.1] font-bold sm:text-4xl lg:text-5xl">
@@ -225,7 +225,7 @@ function Home() {
               <a href="#calculator" className="inline-flex items-center gap-2 rounded-lg bg-gradient-gold px-6 py-3.5 font-semibold text-gold-foreground shadow-gold transition-transform hover:-translate-y-0.5">
                 <HandCoins className="h-5 w-5" /> Get a Loan
               </a>
-              <a href="#services" className="inline-flex items-center gap-2 rounded-lg border border-primary-foreground/80 px-6 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary">
+              <a href="#services" className="inline-flex items-center gap-2 rounded-lg border-2 border-primary-foreground/80 px-6 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary">
 
                 <PlayCircle className="h-5 w-5" /> Learn More
               </a>
@@ -268,11 +268,11 @@ function Home() {
 
       {/* Services */}
       <section id="services" className="py-24">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           <SectionHeader eyebrow="Our Services" title="Financial solutions tailored for you" desc="A complete range of microfinance products built for individuals, entrepreneurs and small businesses." />
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map(({ icon: Icon, title, desc, cta, href }) => (
-              <div key={title} className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1.5 hover:shadow-elegant">
+              <div key={title} className="group relative overflow-hidden rounded-2xl border-2 border-border bg-card p-8 transition-all hover:-translate-y-1.5 hover:shadow-elegant">
                 <span className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-primary to-gold transition-transform duration-500 group-hover:scale-x-100" />
                 <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-primary text-primary-foreground transition-transform group-hover:rotate-6 group-hover:scale-110">
                   <Icon className="h-7 w-7" />
@@ -290,7 +290,7 @@ function Home() {
 
       {/* Calculator */}
       <section id="calculator" className="bg-gradient-to-br from-secondary to-muted py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-12 px-6 lg:grid-cols-2">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Loan Calculator</div>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Plan your loan with confidence</h2>
@@ -332,13 +332,13 @@ function Home() {
 
       {/* How it works */}
       <section id="how" className="py-24">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           <SectionHeader eyebrow="Simple Process" title="How it works" desc="Getting a loan from Foresight is fast, transparent and human. Four steps, no maze." />
           <div className="relative mt-16 grid gap-12 md:grid-cols-4">
             <div className="absolute left-[12%] right-[12%] top-10 hidden h-0.5 bg-gradient-to-r from-primary via-gold to-primary md:block" />
             {steps.map((s) => (
               <div key={s.n} className="relative text-center">
-                <div className="mx-auto grid h-20 w-20 place-items-center rounded-full border-2 border-primary bg-background font-display text-2xl font-extrabold text-primary transition-all hover:scale-110 hover:bg-primary hover:text-primary-foreground">
+                <div className="mx-auto grid h-20 w-20 place-items-center rounded-full border-4 border-primary bg-background font-display text-2xl font-extrabold text-primary transition-all hover:scale-110 hover:bg-primary hover:text-primary-foreground">
 
                   {s.n}
                 </div>
@@ -352,7 +352,7 @@ function Home() {
 
       {/* Impact */}
       <section className="bg-gradient-primary py-20 text-primary-foreground">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-screen-2xl gap-10 px-6 sm:grid-cols-2 lg:grid-cols-4">
           {impact.map(({ icon: Icon, value, label }) => (
             <div key={label} className="text-center">
               <Icon className="mx-auto h-10 w-10 text-gold" />
@@ -366,11 +366,11 @@ function Home() {
 
       {/* Testimonials */}
       <section id="stories" className="bg-ink py-24 text-primary-foreground">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-screen-2xl px-6">
           <SectionHeader eyebrow="Success Stories" title="What our clients say" desc="Real people, real change — powered by capital and community." light />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {testimonials.map((t) => (
-              <div key={t.name} className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur transition-all hover:-translate-y-1 hover:bg-white/10">
+              <div key={t.name} className="rounded-2xl border-2 border-white/10 bg-white/5 p-8 backdrop-blur transition-all hover:-translate-y-1 hover:bg-white/10">
                 <div className="font-display text-5xl leading-none text-gold">&ldquo;</div>
 
                 <p className="mt-2 italic text-primary-foreground/85">{t.quote}</p>
@@ -395,7 +395,7 @@ function Home() {
           <SectionHeader eyebrow="Got Questions?" title="Frequently asked questions" desc="Straight answers about our services, process and eligibility." />
           <div className="mt-12 space-y-3">
             {faqs.map((f, i) => (
-              <div key={f.q} className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+              <div key={f.q} className="overflow-hidden rounded-2xl border-2 border-border bg-card shadow-soft">
                 <button className="flex w-full items-center justify-between gap-4 px-7 py-6 text-left font-semibold transition-colors hover:bg-muted" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                   <span>{f.q}</span>
                   <ChevronDown className={`h-5 w-5 flex-shrink-0 text-primary transition-transform ${openFaq === i ? "rotate-180" : ""}`} />
@@ -411,7 +411,7 @@ function Home() {
 
       {/* Contact */}
       <section id="contact" className="bg-muted py-24">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-screen-2xl gap-12 px-6 lg:grid-cols-2">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Get In Touch</div>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Ready to start your journey?</h2>
@@ -455,14 +455,14 @@ function Home() {
             </div>
             <div className="mt-4">
               <label className="mb-2 block text-sm font-semibold">Service Interested In</label>
-              <select required className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary">
+              <select required className="w-full rounded-xl border-2 border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary">
                 <option value="">Select a service…</option>
                 {services.map((s) => <option key={s.title}>{s.title}</option>)}
               </select>
             </div>
             <div className="mt-4">
               <label className="mb-2 block text-sm font-semibold">Message / Loan Requirements</label>
-              <textarea rows={4} placeholder="Tell us about your needs…" className="w-full resize-y rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary" />
+              <textarea rows={4} placeholder="Tell us about your needs…" className="w-full resize-y rounded-xl border-2 border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary" />
 
             </div>
             <button type="submit" className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5">
@@ -474,7 +474,7 @@ function Home() {
 
       {/* Footer */}
       <footer className="bg-ink text-primary-foreground">
-        <div className="mx-auto max-w-7xl px-6 py-20">
+        <div className="mx-auto max-w-screen-2xl px-6 py-20">
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-3">
@@ -562,7 +562,7 @@ function Field({ label, name, type = "text", placeholder, required }: { label: s
         type={type}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
+        className="w-full rounded-xl border-2 border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
 
       />
     </div>
