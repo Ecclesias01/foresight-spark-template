@@ -43,10 +43,10 @@ export const Route = createFileRoute("/")({
         content:
           "Foresight Microfinance Bank empowers entrepreneurs, families and cooperatives with fast micro-loans, high-yield savings, and community banking built for growth.",
       },
-      { property: "og:title", content: "Foresight Microfinance Bank" },
+      { property: "og:title", content: "Foresight Microfinance Bank — Vision-Backed Finance for Every Dream" },
       {
         property: "og:description",
-        content: "Vision-backed finance for every dream. Micro-loans, savings and group lending — approved in 24 hours.",
+        content: "Foresight Microfinance Bank empowers entrepreneurs, families and cooperatives with fast micro-loans, high-yield savings, and community banking built for growth.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
