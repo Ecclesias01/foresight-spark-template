@@ -166,10 +166,11 @@ function Home() {
           </ul>
 
           <div className="hidden lg:flex items-center gap-3">
-            <a href="#contact" className="rounded-lg border-2 border-primary px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground">
+            <a href="#contact" className="rounded-lg border border-primary px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground">
               Open Account
             </a>
             <a href="#calculator" className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5">
+
               <Calculator className="h-4 w-4" /> Apply Now
             </a>
           </div>
@@ -213,7 +214,8 @@ function Home() {
             <span className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-gold backdrop-blur">
               <Sparkles className="h-3.5 w-3.5" /> Vision-backed finance
             </span>
-            <h1 className="mt-6 text-4xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 text-3xl leading-[1.1] font-bold sm:text-4xl lg:text-5xl">
+
               See further. <span className="text-gold">Build bolder.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-primary-foreground/85">
@@ -223,7 +225,8 @@ function Home() {
               <a href="#calculator" className="inline-flex items-center gap-2 rounded-lg bg-gradient-gold px-6 py-3.5 font-semibold text-gold-foreground shadow-gold transition-transform hover:-translate-y-0.5">
                 <HandCoins className="h-5 w-5" /> Get a Loan
               </a>
-              <a href="#services" className="inline-flex items-center gap-2 rounded-lg border-2 border-primary-foreground/80 px-6 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary">
+              <a href="#services" className="inline-flex items-center gap-2 rounded-lg border border-primary-foreground/80 px-6 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary">
+
                 <PlayCircle className="h-5 w-5" /> Learn More
               </a>
             </div>
