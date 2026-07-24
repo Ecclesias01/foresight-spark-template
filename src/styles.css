@@ -93,7 +93,7 @@
   --card-foreground: oklch(0.98 0.005 250);
   --primary: oklch(0.35 0.08 255);
   --primary-foreground: oklch(0.99 0.005 250);
-  --gold: oklch(0.50 0.11 25);
+  --gold: #8B2E2E;
   --gold-foreground: oklch(0.99 0.005 25);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
