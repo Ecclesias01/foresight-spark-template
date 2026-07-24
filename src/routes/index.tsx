@@ -338,7 +338,8 @@ function Home() {
             <div className="absolute left-[12%] right-[12%] top-10 hidden h-0.5 bg-gradient-to-r from-primary via-gold to-primary md:block" />
             {steps.map((s) => (
               <div key={s.n} className="relative text-center">
-                <div className="mx-auto grid h-20 w-20 place-items-center rounded-full border-4 border-primary bg-background font-display text-2xl font-extrabold text-primary transition-all hover:scale-110 hover:bg-primary hover:text-primary-foreground">
+                <div className="mx-auto grid h-20 w-20 place-items-center rounded-full border-2 border-primary bg-background font-display text-2xl font-extrabold text-primary transition-all hover:scale-110 hover:bg-primary hover:text-primary-foreground">
+
                   {s.n}
                 </div>
                 <h3 className="mt-5 text-lg font-semibold">{s.title}</h3>
@@ -355,7 +356,8 @@ function Home() {
           {impact.map(({ icon: Icon, value, label }) => (
             <div key={label} className="text-center">
               <Icon className="mx-auto h-10 w-10 text-gold" />
-              <div className="mt-3 font-display text-4xl font-extrabold">{value}</div>
+              <div className="mt-3 font-display text-3xl font-extrabold">{value}</div>
+
               <div className="mt-1 text-sm uppercase tracking-widest text-primary-foreground/75">{label}</div>
             </div>
           ))}
@@ -369,7 +371,8 @@ function Home() {
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {testimonials.map((t) => (
               <div key={t.name} className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur transition-all hover:-translate-y-1 hover:bg-white/10">
-                <div className="font-display text-6xl leading-none text-gold">&ldquo;</div>
+                <div className="font-display text-5xl leading-none text-gold">&ldquo;</div>
+
                 <p className="mt-2 italic text-primary-foreground/85">{t.quote}</p>
                 <div className="mt-6 flex items-center gap-4">
                   <div className="grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-primary to-gold font-bold text-primary-foreground">
@@ -452,14 +455,15 @@ function Home() {
             </div>
             <div className="mt-4">
               <label className="mb-2 block text-sm font-semibold">Service Interested In</label>
-              <select required className="w-full rounded-xl border-2 border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary">
+              <select required className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary">
                 <option value="">Select a service…</option>
                 {services.map((s) => <option key={s.title}>{s.title}</option>)}
               </select>
             </div>
             <div className="mt-4">
               <label className="mb-2 block text-sm font-semibold">Message / Loan Requirements</label>
-              <textarea rows={4} placeholder="Tell us about your needs…" className="w-full resize-y rounded-xl border-2 border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary" />
+              <textarea rows={4} placeholder="Tell us about your needs…" className="w-full resize-y rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary" />
+
             </div>
             <button type="submit" className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5">
               <Send className="h-4 w-4" /> Submit Application
@@ -511,7 +515,8 @@ function SectionHeader({ eyebrow, title, desc, light }: { eyebrow: string; title
   return (
     <div className="mx-auto max-w-2xl text-center">
       <div className={`text-xs font-semibold uppercase tracking-[0.2em] ${light ? "text-gold" : "text-primary"}`}>{eyebrow}</div>
-      <h2 className={`mt-3 text-3xl font-bold sm:text-4xl ${light ? "" : "text-foreground"}`}>{title}</h2>
+      <h2 className={`mt-3 text-2xl font-bold sm:text-3xl ${light ? "" : "text-foreground"}`}>{title}</h2>
+
       <p className={`mt-4 ${light ? "text-primary-foreground/75" : "text-muted-foreground"}`}>{desc}</p>
     </div>
   );
@@ -557,7 +562,8 @@ function Field({ label, name, type = "text", placeholder, required }: { label: s
         type={type}
         placeholder={placeholder}
         required={required}
-        className="w-full rounded-xl border-2 border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
+        className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-primary"
+
       />
     </div>
   );
