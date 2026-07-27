@@ -7,7 +7,7 @@ import {
   Percent,
   ArrowRight,
 } from "lucide-react";
-import heroAsset from "@/assets/hero-entrepreneur.png.asset.json";
+import heroAsset from "@/assets/foresight-building.png.asset.json";
 import { impact, services } from "@/lib/site-data";
 import { SectionHeader } from "@/components/site/SiteLayout";
 
@@ -71,9 +71,9 @@ function Home() {
           <div className="relative mt-4 lg:mt-0">
             <img
               src={heroImg}
-              alt="Small business owner supported by Foresight Microfinance"
-              width={1200}
-              height={1000}
+              alt="Foresight Microfinance Bank branch building"
+              width={1386}
+              height={1006}
               className="w-full rounded-3xl shadow-elegant"
             />
             <div className="animate-float absolute -right-2 -top-4 w-44 rounded-2xl bg-card p-4 shadow-elegant sm:-right-6 sm:-top-6 sm:w-56 sm:p-5">
