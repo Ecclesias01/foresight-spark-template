@@ -20,10 +20,10 @@ export const company = {
   headOffice: "45, Opeilu Road, Agbado (Railway Station), Agbado, Ogun State.",
   postal: "P. O. Box 2401, Ikeja, Lagos.",
   businessLocation: "Ifo: New Plaza, Ifo Central Market, Ifo, Ogun State.",
-  phones: ["08034738566", "08035755115", "08033797632", "08023985239"],
-  emails: ["Foresightmfbltd@gmail.com"],
-  website: "www.foresightmfb.com",
-  hours: "Mon – Fri: 8:00 AM – 4:00 PM · Sat: 9:00 AM – 1:00 PM",
+  phones: ["08035755115", "08063298443", "090656603273"],
+  emails: ["info@foresightmfbltd.com.ng"],
+  website: "www.foresightmfbltd.com.ng",
+  hours: "Mon – Fri: 8:00 AM – 4:00 PM",
 };
 
 export const accountTypes = [
