@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
-import { services } from "@/lib/site-data";
+import { MapPin, Phone, Mail, Clock, Send, Globe, Store } from "lucide-react";
+import { services, company } from "@/lib/site-data";
 import { PageHeader } from "@/components/site/SiteLayout";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Foresight Microfinance Bank" },
-      { name: "description", content: "Reach Foresight Microfinance Bank — call, email, visit, or submit an application online. We reply within 24–48 hours." },
+      { name: "description", content: "Reach Foresight Microfinance Bank Ltd. at 45, Opeilu Road, Agbado (Railway Station), Agbado — call, email or apply online. We reply within 24–48 hours." },
       { property: "og:title", content: "Contact — Foresight Microfinance Bank" },
       { property: "og:description", content: "Ready to start your journey? Reach our team through any of the channels below." },
       { property: "og:type", content: "website" },
@@ -26,10 +26,12 @@ function ContactPage() {
           <div>
             <div className="space-y-5">
               {[
-                { icon: MapPin, title: "Head Office", value: "123 Financial District, Suite 400, Accra, Ghana" },
-                { icon: Phone, title: "Phone", value: "+1 (555) 123-4567 · +1 (555) 987-6543" },
-                { icon: Mail, title: "Email", value: "hello@foresightmfb.com · support@foresightmfb.com" },
-                { icon: Clock, title: "Business Hours", value: "Mon – Fri: 8:00 AM – 5:00 PM · Sat: 9:00 AM – 1:00 PM" },
+                { icon: MapPin, title: "Head Office", value: `${company.headOffice} · ${company.postal}` },
+                { icon: Store, title: "Business Location", value: company.businessLocation },
+                { icon: Phone, title: "Phone", value: company.phones.join(" · ") },
+                { icon: Mail, title: "Email", value: company.emails.join(" · ") },
+                { icon: Globe, title: "Website", value: company.website },
+                { icon: Clock, title: "Business Hours", value: company.hours },
               ].map(({ icon: Icon, title, value }) => (
                 <div key={title} className="flex items-start gap-4">
                   <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-xl bg-gradient-primary text-primary-foreground">
@@ -43,6 +45,7 @@ function ContactPage() {
               ))}
             </div>
           </div>
+
 
           <form
             className="rounded-3xl bg-card p-6 shadow-elegant sm:p-8"

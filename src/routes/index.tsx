@@ -8,7 +8,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import heroAsset from "@/assets/foresight-building.png.asset.json";
-import { impact, services } from "@/lib/site-data";
+import { impact, services, company } from "@/lib/site-data";
 import { SectionHeader } from "@/components/site/SiteLayout";
 
 const heroImg = heroAsset.url;
@@ -59,7 +59,7 @@ function Home() {
               </Link>
             </div>
             <div className="mt-12 grid max-w-lg grid-cols-3 gap-6">
-              {[["50K+", "Clients Served"], ["$120M", "Disbursed"], ["98%", "Satisfaction"]].map(([v, l]) => (
+              {[["50K+", "Clients Served"], ["₦12B+", "Disbursed"], ["98%", "Satisfaction"]].map(([v, l]) => (
                 <div key={l}>
                   <div className="font-display text-2xl font-extrabold text-gold sm:text-3xl">{v}</div>
                   <div className="text-xs uppercase tracking-widest text-muted-foreground">{l}</div>
@@ -94,9 +94,24 @@ function Home() {
         </div>
       </section>
 
+      {/* Mission & Vision */}
+      <section className="border-y border-border bg-secondary/30 py-16 sm:py-20">
+        <div className="mx-auto grid max-w-screen-2xl gap-6 px-4 sm:px-6 lg:grid-cols-2">
+          <div className="rounded-2xl border-2 border-border bg-card p-8">
+            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Our Mission</div>
+            <p className="mt-4 text-lg leading-relaxed">{company.mission}</p>
+          </div>
+          <div className="rounded-2xl border-2 border-border bg-card p-8">
+            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Our Vision</div>
+            <p className="mt-4 text-lg leading-relaxed">{company.vision}</p>
+          </div>
+          <p className="lg:col-span-2 text-center font-display text-xl italic text-primary">{company.tagline}</p>
+        </div>
+      </section>
+
       {/* Impact strip */}
       <section className="bg-gradient-primary py-16 text-primary-foreground">
-        <div className="mx-auto grid max-w-screen-2xl gap-8 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-screen-2xl gap-8 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
           {impact.map(({ icon: Icon, value, label }) => (
             <div key={label} className="text-center">
               <Icon className="mx-auto h-10 w-10 text-gold" />
