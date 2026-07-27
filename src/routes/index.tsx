@@ -7,7 +7,7 @@ import {
   Percent,
   ArrowRight,
 } from "lucide-react";
-import heroAsset from "@/assets/hero-entrepreneur.png.asset.json";
+import heroAsset from "@/assets/foresight-building.png.asset.json";
 import { impact, services } from "@/lib/site-data";
 import { SectionHeader } from "@/components/site/SiteLayout";
 
