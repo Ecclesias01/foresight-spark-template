@@ -16,7 +16,7 @@ import {
   Youtube,
 } from "lucide-react";
 import logoAsset from "@/assets/foresight-logo.png.asset.json";
-import { navLinks, services } from "@/lib/site-data";
+import { navLinks, services, company } from "@/lib/site-data";
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,9 +34,9 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <div className="bg-primary-dark text-primary-foreground/90 text-xs sm:text-sm">
         <div className="mx-auto flex max-w-screen-2xl flex-col items-center justify-between gap-1 px-4 py-2 sm:flex-row sm:px-6">
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1">
-            <span className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-gold" /> +1 (555) 123-4567</span>
+            <span className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-gold" /> {company.phones[0]}</span>
             <span className="hidden sm:inline text-primary-foreground/40">|</span>
-            <span className="flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-gold" /> hello@foresightmfb.com</span>
+            <span className="flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-gold" /> {company.emails[0]}</span>
           </div>
           <div className="hidden sm:flex items-center gap-5">
             <a href="#" className="flex items-center gap-2 hover:text-gold transition-colors"><ShieldCheck className="h-3.5 w-3.5" /> Internet Banking</a>
@@ -129,8 +129,12 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                 className="h-12 w-auto object-contain brightness-0 invert"
               />
               <p className="mt-5 max-w-md text-sm text-primary-foreground/70">
-                Empowering individuals and small businesses through accessible, human financial services. Everyone deserves the tools to build a better tomorrow.
+                {company.mission}
               </p>
+              <p className="mt-4 text-sm text-primary-foreground/60">
+                {company.headOffice}<br />{company.postal}<br />{company.phones.join(" · ")}<br />{company.emails[0]}
+              </p>
+              <p className="mt-4 font-display text-base italic text-gold">{company.tagline}</p>
               <div className="mt-6 flex gap-3">
                 {[Facebook, Twitter, Linkedin, Instagram, Youtube].map((Icon, i) => (
                   <a key={i} href="#" aria-label="Social link" className="grid h-10 w-10 place-items-center rounded-xl bg-white/10 transition-all hover:-translate-y-1 hover:bg-primary">
@@ -144,8 +148,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             <FooterCol title="Legal" items={[["Privacy Policy", "#"], ["Terms of Service", "#"], ["Cookie Policy", "#"], ["AML Policy", "#"], ["Disclosures", "#"]]} />
           </div>
           <div className="mt-14 flex flex-col justify-between gap-3 border-t border-white/10 pt-6 text-sm text-primary-foreground/50 sm:flex-row">
-            <div>© {new Date().getFullYear()} Foresight Microfinance Bank. All rights reserved.</div>
-            <div>Licensed and regulated by the Central Bank</div>
+            <div>© {new Date().getFullYear()} {company.name} · {company.rc}. All rights reserved.</div>
+            <div>Licensed and regulated by the Central Bank of Nigeria</div>
           </div>
         </div>
       </footer>
